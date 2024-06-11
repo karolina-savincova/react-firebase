@@ -11,6 +11,16 @@
   <title>Courses for you</title>
 </head>
 
+<script>
+  window.addEventListener('focus', e => {
+    document.title = 'Courses for you';
+  });
+
+  window.addEventListener('blur', e => {
+    document.title = 'Wait, come back!';
+  });
+</script>
+
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
