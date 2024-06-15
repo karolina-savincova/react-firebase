@@ -16,6 +16,7 @@ function HomePage() {
     return categories;
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getCategory = useMemo(() => findCategory(courses), [courses]);
 
   useEffect(() => {
